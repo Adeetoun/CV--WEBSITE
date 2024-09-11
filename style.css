@@ -23,15 +23,16 @@ body{
 }
 .header img{
     border-radius: 50%;
-    width: 150px;
+    width: 140px;
     height: 150px;
 }
 .header .text{
     margin: 10px;
 }
-.header .nav-bar{
+.header .text p{
     cursor: pointer;
 }
+
 .main{
     width: 50%;
     margin: 0 auto;
@@ -75,7 +76,7 @@ body{
     padding: 0.5rem 1rem;
     border: 1px solid var(--color-secondary);
     border-radius: 5px;
-    color: #fff;
+    color: #333;
     cursor: pointer;
     background: transparent;
     transition: all 0.3s ease-in-out;
@@ -88,17 +89,12 @@ body{
 .hidden{
    display: none;
 }
-.hidden h6{
-    margin-top: 20px;
-    align-items: center;
-    text-align: center;
-    font-size: large;
-}
 .hidden .flex{
     display: flex;
     justify-content: space-around;
-    width: 350px;
-    height: 350px;
+    width: 340px;
+    height: 340px;
+    margin-top: 10px;
 }
 .hidden .flex img:hover{
     transform: scale(1.05);
@@ -113,9 +109,37 @@ a:hover{
     transition: all 0.5s ease-in-out;
     background: #f5f8fb;
 }
+.footer{
+    background-color: hsl(0, 0%, 100%);
+    color: #333;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solif #fff;
+    border-radius: 25px;
+}
+h6{
+    font-size: large;
+}
 @media(max-width: 768px) {
+    .main{
+        width: 100%;
+    }
     .grid{
         display: flex;
         flex-direction: column;
+    }
+    .hidden .flex{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .hidden .flex img{
+        width: 170px;
+        height: 170px;
+    }
+    .hidden .flex img:hover{
+        transform: scale(1.5);
+        transition: all 0.5s ease-in-out;
+        background: #f5f8fb;
     }
 }
