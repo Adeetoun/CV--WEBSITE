@@ -108,6 +108,11 @@ body{
 .checked{
     color: goldenrod;
 }
+a:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    background: #f5f8fb;
+}
 @media(max-width: 768px) {
     .grid{
         display: flex;
